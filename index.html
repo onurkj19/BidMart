@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BidMart - Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">BidMart</div>
+        <button class="menu-toggle">☰ Menu</button>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#listings">Browse Listings</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#account" id="account-btn">My Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to BidMart</h1>
+            <p>Your Premier Marketplace for Bidding and Buying</p>
+            <a href="#listings" class="cta-button">Browse Listings</a>
+        </section>
+        
+        <section id="listings" class="featured-products">
+            <h2>Featured Products</h2>
+            <!-- Placeholder for product list -->
+        </section>
+
+        <section id="how-it-works" class="newest-listings">
+            <h2>Newest Listings</h2>
+            <!-- Placeholder for product list -->
+        </section>
+        
+        <section id="about" class="top-bids">
+            <h2>Top Bids</h2>
+            <!-- Placeholder for product list -->
+        </section>
+
+        <section id="contact" class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="quick-links">
+                <a href="#home">Home</a>
+                <a href="#listings">Browse Listings</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="legal">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund Policy</a>
+            </div>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:support@bidmart.com">support@bidmart.com</a></p>
+                <p>Phone: 1-800-123-4567</p>
+                <p>Address: 123 Market St, Suite 400, Cityville, ST 12345</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals for Account Management -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('login-modal')">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" id="login-email" placeholder="Your Email" required>
+                <input type="password" id="login-password" placeholder="Your Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <div class="social-login">
+                <button class="social-btn google-btn">Sign in with Google</button>
+                <button class="social-btn apple-btn">Sign in with Apple</button>
+                <button class="social-btn facebook-btn">Sign in with Facebook</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('register-modal')">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="register-form">
+                <input type="text" id="reg-name" placeholder="First Name" required>
+                <input type="text" id="reg-surname" placeholder="Last Name" required>
+                <input type="email" id="reg-email" placeholder="Your Email" required>
+                <input type="tel" id="reg-tel" placeholder="Phone Number (optional)">
+                <input type="text" id="reg-address" placeholder="Address" required>
+                <input type="text" id="reg-postcode" placeholder="Postcode" required>
+                <input type="password" id="reg-password" placeholder="Your Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
